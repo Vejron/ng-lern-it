@@ -1,0 +1,11 @@
+<div class="container" [className]="'container ' + shake">
+  <div class="card" [ngStyle]="{'transform': 'rotateX('+rotation+'deg)'}">
+    <div class="front">
+      <p>{{frontChallenge}}</p>
+    </div>
+    <div class="back">
+      <p>{{backChallenge}}</p>
+    </div>
+  </div>
+</div>
+

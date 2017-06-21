@@ -1,0 +1,13 @@
+<app-rating-container [right]="right" [wrong]="wrong"></app-rating-container>
+
+<div class="flex flex-center">
+  <div class="flex in-out">
+    <app-challenge-view #view [challenge]="challenge"></app-challenge-view>
+    <p> = </p>
+    <input #box (keyup.enter)="onCheckResult(box)">
+  </div>
+</div>
+
+<app-challenge-multi-input [challenge]="challenge" (answerSelected)="onCheckResultMulti($event)"></app-challenge-multi-input>
+<!--button (click)="onCheckResult(box)">Check!</button-->
+<!--button (click)="view.error()">error!</button-->
